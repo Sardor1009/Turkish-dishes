@@ -1,0 +1,393 @@
+@use "../style.scss";
+@use "../utils/variables" as v;
+@use "../base/fonts";
+@use "../base/function";
+@use "../utils/mixin" as m;
+
+#navbar {
+  padding-bottom: 15px;
+  img {
+    max-width: 135px;
+    @media (max-width: 768px) {
+      max-width: 100px;
+    }
+  }
+}
+#navbar.navbar-shrink {
+  transition: 0.7s;
+  padding-bottom: 0;
+  box-shadow: 0 0 5px v.$black-color;
+}
+
+.nav-item .nav-link {
+  color: v.$white_color;
+  font-family: "Open Sans", sans-serif;
+  &:hover {
+    color: v.$black-color;
+  }
+}
+.navbar-toggler img {
+  padding: -5px;
+  border: none;
+  outline: none;
+}
+#hero {
+  padding-top: 180px;
+  padding-bottom: 237px;
+  background-color: v.$primary-color;
+  button {
+    padding: 8px 12px;
+    border: 1px solid v.$white_color;
+    font-size: 16px;
+    line-height: 175%;
+    font-weight: 700;
+    margin-top: 24px;
+    letter-spacing: 0.64px;
+    font-family: "Varela Round", sans-serif;
+    @media (max-width: 500px) {
+      font-size: 10px;
+    }
+    .scroll {
+      height: 60px;
+    }
+  }
+  h4,
+  h1,
+  p {
+    font-family: "Varela Round", sans-serif;
+    color: v.$white_color;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.92px;
+    text-transform: capitalize;
+  }
+  h1 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    font-size: 90px;
+    letter-spacing: 3.6px;
+    @media (max-width: 1150px) {
+      font-size: 45px;
+    }
+  }
+  p {
+    max-width: 453px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+  }
+}
+.hero {
+  &__image {
+    max-width: 100%;
+  }
+}
+#home {
+  background-color: v.$home-bg;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.home {
+  position: relative;
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: -170px;
+  }
+  h2 {
+    color: v.$primary-color;
+    font-family: "Varela Round", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 1.44px;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+    @media (max-width: 550px) {
+      font-size: 30px;
+    }
+  }
+  &__carousel {
+    border-radius: 14px;
+    padding: 20px 20px 40px;
+    background-color: v.$white_color;
+    p,
+    h3,
+    h2 {
+      color: v.$black-color;
+      text-align: center;
+      font-family: Open Sans;
+      font-size: 18px;
+      font-weight: 600;
+      padding: 10px 0 20px;
+    }
+    h3 {
+      color: v.$primary-color;
+      margin-top: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+}
+#home .home__image {
+  max-width: 108px;
+}
+#owl-carousel .owl-next,
+#owl-carousel .owl-prev {
+  position: absolute;
+}
+#owl-carousel .owl-next,
+#owl-carousel .owl-prev {
+  right: 0;
+  top: -70px;
+  @media (max-width: 500px) {
+    img {
+      width: 20px;
+    }
+  }
+}
+#owl-carousel .owl-prev {
+  right: 60px;
+  @media (max-width: 500px) {
+    right: 40px;
+  }
+}
+
+// =--------pack tabb======
+
+#pack {
+  padding: 120px 0;
+  h2 {
+    color: v.$primary-color;
+    font-family: "Varela Round", sans-serif;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 1.44px;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+  }
+}
+
+#library {
+  @include m.grid;
+  @media (max-width: 900px) {
+    @include m.grid($number: 2);
+  }
+  @media (max-width: 400px) {
+    @include m.grid($number: 1);
+  }
+}
+
+.pack {
+  li:hover {
+    color: v.$black-color;
+  }
+
+  &__tab {
+    background-color: v.$white_color;
+    border-radius: 14px;
+    border: 1px solid v.$pack-tab;
+    background: v.$white_color;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+.ap-tab-link {
+  color: v.$black-color;
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 175%;
+  letter-spacing: 0.8px;
+  text-transform: capitalize;
+  @media (max-width: 1150px) {
+    font-size: 10px;
+  }
+  // .ab-tab-link.active-tab {
+  //   background-color: v.$primary-color;
+  // }
+}
+.ab-tap-link {
+  background: v.$primary-color;
+  padding: 10px 20px;
+  border: 1px solid v.$primary-color;
+}
+
+.ab-tab-link.active-tab {
+  background-color: red;
+  color: green;
+}
+#pack .ab-tap-list {
+  @include m.grid($number: 2);
+}
+
+// =====prooofff ppp-------
+
+#proof {
+  padding: 90px 0;
+  background-color: v.$proof-bc;
+}
+.proof {
+  position: relative;
+  &__items {
+    background-color: v.$white_color;
+    padding: 30px 20px;
+    border-radius: 10px;
+    border: 1px solid v.$pack-tab;
+    background: v.$white_color;
+  }
+  h3,
+  p,
+  h6 {
+    color: v.$black-color;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+  }
+  h6 {
+    font-family: Inter, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  &__scissors {
+    position: absolute;
+    right: 0;
+    bottom: -130px;
+  }
+  &__row {
+    background-color: v.$white_color;
+    h6 {
+      margin-bottom: 0;
+    }
+    img {
+      width: 16px !important;
+    }
+  }
+
+  h4,
+  h2 {
+    color: v.$black-color;
+    font-family: "Varela Round", sans-serif;
+    font-size: 23px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.92px;
+    text-transform: capitalize;
+  }
+  h2 {
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 1.44px;
+    text-transform: capitalize;
+    margin-bottom: 60px;
+  }
+}
+
+// =--------update==-----
+#update {
+  padding: 120px 0;
+  #button {
+    @include m.button;
+    color: v.$black-color;
+    font-size: 16px;
+    font-family: "Varela Round", sans-serif;
+    font-weight: 700;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    margin-top: 60px;
+  }
+  h2,
+  h4 {
+    color: v.$black-color;
+    font-family: "Varela Round", sans-serif;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.92px;
+    text-transform: capitalize;
+  }
+  h2 {
+    color: v.$primary-color;
+    font-size: 48px;
+    font-weight: 500;
+    letter-spacing: 1.44px;
+    margin-bottom: 60px;
+  }
+}
+.update {
+  &__row {
+    @include m.grid($number: 3);
+    @media (max-width: 900px) {
+      @include m.grid($number: 2);
+    }
+    @media (max-width: 600px) {
+      @include m.grid($number: 1);
+    }
+  }
+  &__row__card {
+    img {
+      width: 100%;
+    }
+    border-radius: 14px;
+    border: 1px solid v.$pack-tab;
+    background: #fff;
+    max-width: 410px;
+    h3,
+    p,
+    h1,
+    h6 {
+      color: v.$aaa;
+      font-family: Open Sans;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+    }
+    h1 {
+      color: v.$black-color;
+      font-family: "Varela Round", sans-serif;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 32px;
+      text-transform: capitalize;
+    }
+    h3 {
+      color: v.$primary-color;
+      font-family: "Varela Round", sans-serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.64px;
+    }
+    &__desc {
+      padding: 20px 20px 30px 20px;
+    }
+  }
+ }
+// ===----modal --------
+#modal {
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 764px;
+  margin-bottom: 120px;
+  background-image: url("../../images/home/modal.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+  
+

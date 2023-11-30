@@ -1,0 +1,33 @@
+@use "./fonts";
+@use "./function" as func;
+
+
+.container {
+  max-width: func.container(1920, 310, 20)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+  }
+  * ,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  ul {
+   list-style-type: none;
+   }
+   
+  a {
+    text-decoration: none;
+  }
+  button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }

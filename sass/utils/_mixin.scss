@@ -1,0 +1,13 @@
+@use "../utils/variables" as v;
+
+@mixin grid($number: 4, $fr: 1fr) {
+  display: grid;
+  grid-template-columns: repeat($number, $fr);
+  justify-items: center;
+  gap: 20px;
+}
+@mixin button($padding: 8px 32px, $border: 100px ){
+    padding: $padding;
+    border-radius: $border;
+    border: 1px solid v.$primary-color;
+}
