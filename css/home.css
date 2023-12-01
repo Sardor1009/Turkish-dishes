@@ -504,3 +504,28 @@ button {
   opacity: 0;
   border-radius: 14px;
 }
+
+.galery__left h2,
+.galery__left h6,
+.galery__left p, .galery__left button {
+  color: #242424;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
+.galery__left h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+}
+.galery__left p {
+  color: #aaa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
