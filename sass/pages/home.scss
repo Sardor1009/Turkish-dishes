@@ -402,12 +402,16 @@
 }
 
 // -----------carousel -----
+
+#gallery {
+  background-color: v.$pack-tab;
+  padding-bottom: 120px;
+  padding-top: 100px;
+  margin-bottom: 120px;
+}
 .entry {
-  // &__image {
-  //   width: 100%;
-  // }
   position: relative;
-  
+
   &:hover {
     .image__overlay {
       opacity: 0.6;
@@ -420,7 +424,7 @@
   // z-index: 2;
   bottom: 200px;
   right: 0;
-  left: 130px;
+  left: 685px;
 }
 #gallery {
   overflow: hidden;
@@ -439,7 +443,8 @@
 .galery__left {
   h2,
   h6,
-  p, button {
+  p,
+  button {
     color: v.$black-color;
     font-family: "Varela Round", sans-serif;
     font-size: 16px;
@@ -458,7 +463,82 @@
     color: v.$aaa;
     font-size: 16px;
     font-weight: 400;
-    line-height: 175%; 
+    line-height: 175%;
     letter-spacing: 0.64px;
+  }
+}
+
+// ---------footer --------
+#footer {
+  position: relative;
+  background-color: green;
+}
+
+.footer__content {
+  background: v.$primary-color;
+  top: -465px;
+  position: absolute;
+  top: 0;
+  max-width: 1300px;
+  width: 100%;
+  border-radius: 20px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 64px 20px;
+  border-radius: 20px;
+  box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+  h4,
+  h6,
+  h2 {
+    color: v.$white_color;
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.92px;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 1.44px;
+    margin-bottom: 24px;
+    @media (max-width: 900px) {
+      font-size: 35px;
+    }
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    margin-bottom: 60px;
+  }
+  &__btns {
+    margin-right: 30px;
+    margin-left: 30px;
+    &::placeholder,
+    button {
+      color: v.$pack-tab;
+      font-family: "Varela Round", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 175%;
+      letter-spacing: 0.64px;
+      text-transform: capitalize;
+    }
+    button {
+      color: v.$white_color;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 175%;
+      text-align: center;
+      @media (max-width: 1000px) {
+        margin-top: 30px;
+      }
+    }
   }
 }
