@@ -659,5 +659,6 @@ footer {
 }
 
 #toast {
-  margin-top: 300px;
+  padding-top: 300px;
+  background-color: #BB2339 !important;
 }
