@@ -19,11 +19,13 @@
   box-shadow: 0 0 5px v.$black-color;
 }
 
-.nav-item .nav-link {
-  color: v.$white_color;
-  font-family: "Open Sans", sans-serif;
-  &:hover {
+.offcanvas-body .nav-home__carousel {
+  &:hover .nav-link {
     color: v.$black-color;
+  }
+  .nav-link {
+    color: v.$white_color;
+    font-family: "Open Sans", sans-serif;
   }
 }
 .navbar-toggler img {
@@ -375,9 +377,10 @@
       padding: 20px 20px 30px 20px;
     }
   }
- }
+}
 // ===----modal --------
 #modal {
+  position: relative;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -386,8 +389,54 @@
   background-image: url("../../images/home/modal.png");
   background-repeat: no-repeat;
   background-size: cover;
+  img {
+    max-width: 100px;
+    width: 100%;
+    @media (max-width: 800px){
+      width: 60px;
+    }
+    position: absolute;
+    bottom: 320px;
+    right:calc(100vw / 2 - 40px);
+  }
 }
 
 
-  
+
+// -----------carousel -----
+.entry {
+  position: relative;
+  &:hover {
+    .image__overlay{
+   opacity: 0.6;
+    }
+  }
+  overflow: hidden;
+}
+.instagram {
+  position: absolute;
+  // z-index: 2;
+  bottom: 200px;
+  right: 0;
+  left: 130px;
+}
+#gallery {
+  overflow: hidden;
+}
+
+.image__overlay {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+
+  position: absolute;
+  background-color: v.$black-color;
+  opacity: 0;
+  border-radius: 14px;
+}
+
+.galery__left {
+  // padding-left: 200px;
+}
+
 

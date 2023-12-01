@@ -69,16 +69,16 @@
                 class="navbar-nav justify-content-end align-home__carousels-center flex-grow-1 gap-4 pe-3"
               >
                 <li class="nav-home__carousel">
-                  <a class="nav-link" aria-current="page" href="#home">Menu</a>
+                  <a class="nav-link text-light" aria-current="page" href="#home">Menu</a>
                 </li>
                 <li class="nav-home__carousel">
-                  <a class="nav-link" href="#news">News</a>
+                  <a class="nav-link text-light" href="#news">News</a>
                 </li>
                 <li class="nav-home__carousel">
-                  <a class="nav-link" href="#about">About Us</a>
+                  <a class="nav-link text-light" href="#about">About Us</a>
                 </li>
                 <li class="nav-home__carousel">
-                  <a class="nav-link" href="#contact">Contact Us</a>
+                  <a class="nav-link text-light" href="#contact">Contact Us</a>
                 </li>
                 <li class="nav-home__carousel">
                   <button
@@ -1160,58 +1160,88 @@
         </div>
       </section>
       <section id="modal">
-        <div class="container modal">
+        <div class="container">
           <!-- Button trigger modal -->
-          <button
-            type="button"
-            class=""
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop">
-            <img  src="./images/home/startplay.png" alt="hrjfdjsfjg">
-          </button>
+              <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <img class="d-flex align-items-center justify-content-center" src="./images/home/startplay.png" alt="">
+              </button>
 
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    Modal title
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable">
+                  <div class="modal-content bg-primary">
+                    <div class="modal-header">
+                      <h1 class="modal-title text-light fs-5" id="exampleModalLabel">You can play the video here.</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body bg-primary">
+                      <video src="./images/home/dishes.mp4" autoplay controls></video>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tap to close</button>
+                    </div>
+                  </div>
                 </div>
-                <div class="modal-body">...</div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
-                  <button type="button" class="btn btn-primary">
-                    Understood
-                  </button>
+              </div>
+        </div>
+        <!-- <div class="container modal">
+          
+        </div> -->
+      </section>
+        <section id="gallery" class="container-xxl galery">
+          <div class="mb-3">
+            <div class="row g-4">
+              <div class="galery__left col-md-4">
+                <h6>Instagram</h6>
+                <img src="./images/home/vector.svg" alt="">
+                <h2>Photo Gallery</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit
+                  scelerisque egestas mu.</p>
+                <button class="btn btn-outline-primary">View More</button>
+              </div>
+              <div class="col-md-8 d-flex">
+                <div class="galery">
+                  <div class="faders">
+                    <div class="left"></div>
+                    <div class="right"></div>
+                  </div>
+                  <div class="items d-flex gap-3">
+                    <div class="entry">
+                      <div class="image__overlay">
+                        <img class="instagram" src="./images/home/galleryicon.svg" alt="">
+                      </div>
+                      <img src="./images/home/gallery.png" alt="img">
+                    </div>
+                    <div class="entry">
+                      <img src="./images/home/gallery2.png" alt="img">
+                    </div>
+                    <div class="entry">
+                      <img src="./images/home/gallery1.png" alt="img">
+                    </div>
+                    <div class="entry">
+                      <img src="./images/home/gallery.png" alt="img">
+                    </div>
+                    <div class="entry">
+                      <img src="./images/home/gallery1.png" alt="img">
+                    </div>
+                    <div class="entry">
+                      <img src="./images/home/gallery2.png" alt="img">
+                    </div>
+                    <div class="entry">
+                      <img src="./images/home/gallery1.png" alt="img">
+                    </div>
+                    <div class="entry">
+                      <img src="./images/home/gallery.png" alt="img">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+    
     </main>
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"

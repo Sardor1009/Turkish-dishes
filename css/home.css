@@ -54,12 +54,12 @@ button {
           box-shadow: 0 0 5px #242424;
 }
 
-.nav-item .nav-link {
+.offcanvas-body .nav-home__carousel:hover .nav-link {
+  color: #242424;
+}
+.offcanvas-body .nav-home__carousel .nav-link {
   color: #fff;
   font-family: "Open Sans", sans-serif;
-}
-.nav-item .nav-link:hover {
-  color: #242424;
 }
 
 .navbar-toggler img {
@@ -452,6 +452,7 @@ button {
 }
 
 #modal {
+  position: relative;
   max-width: 1920px;
   margin-left: auto;
   margin-right: auto;
@@ -460,4 +461,46 @@ button {
   background-image: url("../../images/home/modal.png");
   background-repeat: no-repeat;
   background-size: cover;
+}
+#modal img {
+  max-width: 100px;
+  width: 100%;
+  position: absolute;
+  bottom: 320px;
+  right: calc(50vw - 40px);
+}
+@media (max-width: 800px) {
+  #modal img {
+    width: 60px;
+  }
+}
+
+.entry {
+  position: relative;
+  overflow: hidden;
+}
+.entry:hover .image__overlay {
+  opacity: 0.6;
+}
+
+.instagram {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  left: 130px;
+}
+
+#gallery {
+  overflow: hidden;
+}
+
+.image__overlay {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  background-color: #242424;
+  opacity: 0;
+  border-radius: 14px;
 }
