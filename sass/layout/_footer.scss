@@ -1,1 +1,126 @@
 @use "../style.scss";
+@use "../utils/mixin" as m;
+@use "../utils/variables" as v;
+
+#special {
+  width: 100%;
+  height: 320px;
+  background-color: v.$white_color;
+}
+footer {
+  background-color: v.$primary-color;
+  height: 800px;
+}
+.bottom {
+  position: relative;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.bottom2 {
+  top: -190px !important;
+  position: absolute;
+  top: 0;
+  max-width: 1310px;
+  width: 100%;
+  margin-left: 20px;
+  padding: 64px 20px;
+  box-shadow: 22px 30px 95px 1px rgba(86, 86, 86, 0.2);
+  h4,
+  h6,
+  h2 {
+    color: v.$white_color;
+    font-family: "Varela Round", sans-serif;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 130%;
+    letter-spacing: 0.92px;
+    text-transform: capitalize;
+  }
+
+  h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 1.44px;
+    margin-bottom: 24px;
+    @media (max-width: 900px) {
+      font-size: 35px;
+    }
+  }
+  h6 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+    margin-bottom: 60px;
+    @media (max-width: 700px) {
+      margin-bottom: 10px;
+    }
+  }
+  &__btns {
+    margin-right: 30px;
+    margin-left: 30px;
+    &::placeholder,
+    button {
+      color: v.$pack-tab;
+      font-family: "Varela Round", sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 175%;
+      letter-spacing: 0.64px;
+      text-transform: capitalize;
+    }
+    button {
+      color: v.$white_color;
+      font-style: normal;
+      font-weight: 700;
+      text-align: center;
+      @media (max-width: 1000px) {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+#toast {
+  padding-top: 300px;
+  background-color: v.$primary-color !important;
+  p {
+    max-width: 439px;
+  }
+  img {
+    max-width: 336px;
+    width: 100%;
+  }
+}
+
+.footer__special,
+.footer__thing,
+p {
+  text-align: center;
+  font-family: "Varela Round", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1.28px;
+  text-transform: capitalize;
+}
+.footer__thing {
+  font-family: Open Sans;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.64px;
+}
+p {
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.64px;
+}
+.social__images {
+    margin-bottom: 80px;
+    margin-top: 45px;
+  &__p {
+    margin-bottom: 40px;
+  }
+} 

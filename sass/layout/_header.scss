@@ -1,1 +1,33 @@
 @use "../style.scss";
+@use "../utils/mixin" as m;
+@use "../utils/variables" as v;
+
+#navbar {
+    padding-bottom: 15px;
+    img {
+      max-width: 135px;
+      @media (max-width: 768px) {
+        max-width: 100px;
+      }
+    }
+  }
+  #navbar.navbar-shrink {
+    transition: 0.7s;
+    padding-bottom: 0;
+    box-shadow: 0 0 5px v.$black-color;
+  }
+  
+  .offcanvas-body .nav-home__carousel {
+    &:hover .nav-link {
+      color: v.$black-color;
+    }
+    .nav-link {
+      color: v.$white_color;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  .navbar-toggler img {
+    padding: -5px;
+    border: none;
+    outline: none;
+  }

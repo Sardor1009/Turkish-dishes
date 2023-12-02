@@ -1,1 +1,7 @@
 @use "../style.scss";
+@use "../utils/variables" as v;
+@use "../base/fonts";
+@use "../base/function";
+@use "../utils/mixin" as m;
+@use "../layout/footer";
+@use "../layout/header";
