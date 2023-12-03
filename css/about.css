@@ -285,6 +285,12 @@ p {
   letter-spacing: 0.92px;
   text-transform: capitalize;
 }
+@media (max-width: 700px) {
+  #update h2,
+  #update h4 {
+    font-size: 40px;
+  }
+}
 #update img {
   margin-bottom: 60px;
 }

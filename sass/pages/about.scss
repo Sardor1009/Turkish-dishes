@@ -28,6 +28,9 @@
       text-align: center;
       letter-spacing: 0.92px;
       text-transform: capitalize;
+      @media (max-width: 700px){
+        font-size: 40px;
+    }
     }
     img {
         margin-bottom: 60px;
