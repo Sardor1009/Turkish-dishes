@@ -5,7 +5,7 @@ $(document).ready(function(){
             margin: 20,
             dots: false,
             nav: true,
-            // autoplay: true,
+            autoplay: true,
             items: 4,
             navText: ["<img src='images/home/right.svg'/>", "<img src='images/home/left.svg'/>"],
             responsive: {
@@ -48,6 +48,8 @@ const myInput = document.getElementById('myInput')
 myModal.addEventListener('shown.bs.modal', () => {
   myInput.focus()
 })
+
+
 
 
 

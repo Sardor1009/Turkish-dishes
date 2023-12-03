@@ -175,13 +175,13 @@ footer {
 .footer__special,
 .footer__thing,
 p {
-  text-align: center;
   font-family: "Varela Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 1.28px;
   text-transform: capitalize;
+  margin-right: 30px;
 }
 
 .footer__thing {
@@ -203,6 +203,22 @@ p {
 }
 .social__images__p {
   margin-bottom: 40px;
+}
+
+@media (max-width: 992px) {
+  .footer__items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-bottom: 40px;
+  }
 }
 
 #navbar {
@@ -237,4 +253,148 @@ p {
   padding: -5px;
   border: none;
   outline: none;
+}
+
+#hero {
+  padding-top: 150px;
+}
+
+.hero__ahref {
+  line-height: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #B0B0B0;
+}
+.hero__ahref2 {
+  padding-left: 10px;
+}
+.hero__navbar {
+  position: relative;
+  padding: 10px 30px;
+  margin-left: 20px;
+}
+.hero__navbar__item {
+  margin-right: 20px;
+}
+.hero__navbar img {
+  position: absolute;
+  left: 100px;
+  top: calc(66.6666666667vh + 500px);
+}
+.hero h2 {
+  font-family: "Varela Round", sans-serif;
+  color: #fff;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 54px;
+  text-transform: capitalize;
+}
+
+#v-pills-home,
+#v-pills-profile,
+#v-pills-settings,
+#v-pills-messages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  gap: 20px;
+}
+@media (max-width: 1000px) {
+  #v-pills-home,
+  #v-pills-profile,
+  #v-pills-settings,
+  #v-pills-messages {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 20px;
+  }
+}
+
+.home__carousel {
+  border: 1px solid rgba(36, 36, 36, 0.1);
+  border-radius: 14px;
+  padding: 20px 20px 40px;
+  background-color: #fff;
+}
+.home__carousel img {
+  width: 100%;
+}
+.home__carousel p,
+.home__carousel h3,
+.home__carousel h2 {
+  color: #242424;
+  text-align: center;
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 0 20px;
+}
+.home__carousel h3 {
+  color: #BB2339;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+#gallery {
+  background-color: rgba(36, 36, 36, 0.1);
+  padding-bottom: 120px;
+  padding-top: 100px;
+}
+
+.entry {
+  position: relative;
+  overflow: hidden;
+}
+.entry:hover .image__overlay {
+  opacity: 0.7;
+}
+
+.image__overlay .instagram {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  left: 685px;
+}
+
+#gallery {
+  overflow: hidden;
+}
+
+.image__overlay {
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s;
+  transition: 1s;
+  position: absolute;
+  background-color: #242424;
+  opacity: 0;
+  border-radius: 14px;
+}
+
+.galery__left h2,
+.galery__left h6,
+.galery__left p,
+.galery__left button {
+  color: #242424;
+  font-family: "Varela Round", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 175%;
+  letter-spacing: 0.64px;
+}
+.galery__left h2 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 1.44px;
+  text-transform: capitalize;
+}
+.galery__left p {
+  color: #aaa;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 175%;
+  letter-spacing: 0.64px;
 }

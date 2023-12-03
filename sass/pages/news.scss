@@ -5,3 +5,142 @@
 @use "../utils/mixin" as m;
 @use "../layout/footer";
 @use "../layout/header";
+
+#hero {
+  padding-top: 150px;
+}
+
+.hero {
+  &__ahref {
+    line-height: 10px;
+    padding-right: 10px;
+    border-right: 1px solid v.$border-right;
+  }
+  &__ahref2 {
+    padding-left: 10px;
+  }
+  &__navbar {
+    position: relative;
+    padding: 10px 30px;
+    margin-left: 20px;
+   &__item {
+    margin-right: 20px;
+   }
+    img {
+      position: absolute;
+      left: calc( 100px);
+      top: calc(100vh * 2 / 3 + 500px);
+    }
+  }
+  h2 {
+    font-family: "Varela Round", sans-serif;
+    color: v.$white_color;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 54px;
+    text-transform: capitalize;
+  }
+}
+#v-pills-home,
+#v-pills-profile,
+#v-pills-settings,
+#v-pills-messages {
+  @include m.grid($number: 2);
+  @media (max-width: 1000px){
+    @include m.grid($number: 1);
+  }
+}
+.home__carousel {
+  border: 1px solid v.$pack-tab;
+  border-radius: 14px;
+  padding: 20px 20px 40px;
+  background-color: v.$white_color;
+  img {
+    width: 100%;
+  }
+  p,
+  h3,
+  h2 {
+    color: v.$black-color;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 0 20px;
+  }
+  h3 {
+    color: v.$primary-color;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+  }
+}
+// -----gallery----------
+#gallery {
+  background-color: v.$pack-tab;
+  padding-bottom: 120px;
+  padding-top: 100px;
+}
+.entry {
+  position: relative;
+
+  &:hover {
+    .image__overlay {
+      opacity: 0.7;
+    }
+  }
+  overflow: hidden;
+}
+.image__overlay .instagram {
+  position: absolute;
+  bottom: 200px;
+  right: 0;
+  left: 685px;
+}
+// .image__overlay:hover {
+//   .instagram {
+//     opacity: 1;
+//   }
+// }
+#gallery {
+  overflow: hidden;
+}
+
+.image__overlay {
+  width: 100%;
+  height: 100%;
+  transition: 1s;
+  position: absolute;
+  background-color: v.$black-color;
+  opacity: 0;
+  border-radius: 14px;
+}
+
+.galery__left {
+  h2,
+  h6,
+  p,
+  button {
+    color: v.$black-color;
+    font-family: "Varela Round", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+  }
+  h2 {
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 130%;
+    letter-spacing: 1.44px;
+    text-transform: capitalize;
+  }
+  p {
+    color: v.$aaa;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 175%;
+    letter-spacing: 0.64px;
+  }
+}

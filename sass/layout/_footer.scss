@@ -38,7 +38,6 @@ footer {
     letter-spacing: 0.92px;
     text-transform: capitalize;
   }
-
   h2 {
     font-size: 48px;
     font-weight: 500;
@@ -98,13 +97,14 @@ footer {
 .footer__special,
 .footer__thing,
 p {
-  text-align: center;
+  // text-align: center;
   font-family: "Varela Round", sans-serif;
   font-size: 32px;
   font-weight: 400;
   line-height: 130%;
   letter-spacing: 1.28px;
   text-transform: capitalize;
+  margin-right: 30px;
 }
 .footer__thing {
   font-family: Open Sans;
@@ -124,3 +124,12 @@ p {
     margin-bottom: 40px;
   }
 } 
+.footer__items{
+  @media (max-width: 992px){
+     display: flex;
+     flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px ;
+  }
+}
+

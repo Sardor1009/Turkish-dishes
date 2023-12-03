@@ -6,7 +6,6 @@
 @use "../layout/footer";
 @use "../layout/header";
 
-
 // ===heroooooooo-----
 #hero {
   padding-top: 180px;
@@ -388,18 +387,22 @@
 
   &:hover {
     .image__overlay {
-      opacity: 0.6;
+      opacity: 0.7;
     }
   }
   overflow: hidden;
 }
-.instagram {
+.image__overlay .instagram {
   position: absolute;
-  // z-index: 2;
   bottom: 200px;
   right: 0;
   left: 685px;
 }
+// .image__overlay:hover {
+//   .instagram {
+//     opacity: 1;
+//   }
+// }
 #gallery {
   overflow: hidden;
 }
