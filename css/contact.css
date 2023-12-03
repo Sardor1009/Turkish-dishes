@@ -4,6 +4,10 @@
   max-width: 1340px;
 }
 
+body {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;

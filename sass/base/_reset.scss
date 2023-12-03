@@ -5,6 +5,9 @@
 .container {
   max-width: func.container(1920, 310, 20)
 }
+body {
+   scroll-behavior: smooth;
+}
 
 * {
     margin: 0;

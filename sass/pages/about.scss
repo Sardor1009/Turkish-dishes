@@ -1,1 +1,100 @@
+
 @use "../style.scss";
+@use "../utils/variables" as v;
+@use "../base/fonts";
+@use "../base/function";
+@use "../utils/mixin" as m;
+@use "../layout/footer";
+@use "../layout/header";
+#update {
+    padding: 120px 0;
+    #button {
+      @include m.button;
+      color: v.$black-color;
+      font-size: 16px;
+      font-family: "Varela Round", sans-serif;
+      font-weight: 700;
+      line-height: 175%;
+      letter-spacing: 0.64px;
+      margin-top: 60px;
+    }
+    h2,
+    h4 {
+      color: v.$black-color;
+      font-family: "Varela Round", sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      line-height: 130%;
+      text-align: center;
+      letter-spacing: 0.92px;
+      text-transform: capitalize;
+    }
+    img {
+        margin-bottom: 60px;
+    }
+    h2 {
+      color: v.$primary-color;
+      font-size: 48px;
+      font-weight: 500;
+      letter-spacing: 1.44px;
+      margin-bottom: 60px;
+    }
+  }
+  
+    .hero__ahref {
+      line-height: 10px;
+      padding-right: 10px;
+      border-right: 1px solid v.$border-right;
+    }
+    .hero__ahref2 {
+      padding-left: 10px;
+    }
+.update {
+
+    &__row {
+      @include m.grid($number: 3);
+      @media (max-width: 900px) {
+        @include m.grid($number: 2);
+      }
+      @media (max-width: 600px) {
+        @include m.grid($number: 1);
+      }
+    }
+    &__row__card {
+      img {
+        width: 100%;
+      }
+      border-radius: 14px;
+      border: 1px solid v.$pack-tab;
+      background: #fff;
+      max-width: 410px;
+      h3,
+      p,
+      h1,
+      h6 {
+        color: v.$aaa;
+        font-family: Open Sans;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 24px;
+      }
+      h1 {
+        color: v.$black-color;
+        font-family: "Varela Round", sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 32px;
+        text-transform: capitalize;
+      }
+      h3 {
+        color: v.$primary-color;
+        font-family: "Varela Round", sans-serif;
+        font-size: 16px;
+        font-weight: 700;
+        letter-spacing: 0.64px;
+      }
+      &__desc {
+        padding: 20px 20px 30px 20px;
+      }
+    }
+  }
