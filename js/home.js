@@ -1,7 +1,5 @@
 
 
-
-
 // or
 
 const loading = document.getElementById("loading");
@@ -11,7 +9,6 @@ const loadingDuration = 2000; // 2s
 setTimeout(() => {
   loading.classList.add('loading-none');
 }, loadingDuration);
-
 
 
 window.addEventListener("scroll", function () {
@@ -27,4 +24,3 @@ window.addEventListener("scroll", function () {
           navbar.classList.remove("navbar-shrink");
       }
   }
-

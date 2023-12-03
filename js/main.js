@@ -41,13 +41,22 @@ $(document).ready(function(){
   }
 
 
+ 
 
-  const myModal = document.getElementById('myModal')
-const myInput = document.getElementById('myInput')
+// or
 
-myModal.addEventListener('shown.bs.modal', () => {
-  myInput.focus()
-})
+
+
+// or
+
+const loading = document.getElementById("loading");
+
+const loadingDuration = 2000; // 2s
+
+setTimeout(() => {
+  loading.classList.add('loading-none');
+}, loadingDuration);
+
 
 
 
