@@ -5,3 +5,20 @@
 @use "../utils/mixin" as m;
 @use "../layout/footer";
 @use "../layout/header";
+
+#about {
+    margin-top: 120px;
+  h4 {
+    color: v.$black-color;
+    font-family: "Varela Round", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    letter-spacing: 0.92px;
+    text-transform: capitalize;
+  }
+  img {
+    margin-bottom: 60px;
+}
+}
