@@ -52,7 +52,7 @@
             </div>
             <div class="offcanvas-body">
               <ul
-                class="navbar-nav justify-content-end align-home__carousels-center flex-grow-1 gap-4 pe-3"
+                class="navbar-nav text-center   justify-content-end align-home__carousels-center flex-grow-1 gap-4 pe-3"
               >
                 <li class="nav-home__carousel">
                   <a class="nav-link text-light" aria-current="page" href="../index.html">Home</a>
@@ -85,11 +85,15 @@
     <main>
        <section id="main">
         <div class="container-xxl main">
+            <div class="m-4">
+                <a class="hero__ahref text-secondary" href="../index.html">Home</a>
+                <a class="text-primary hero__ahref2" href="./news.html">Menu</a>
+              </div>
             <h4 class="text-align-center">Contact Us</h4>
             <img class="main__img d-flex mx-auto" src="../images/home/vector.svg" alt="" />
-            <div class="row d-flex">
-                <div class="col-12 col-md-4">
-                    <div class=" border border-secondary mb-3 rounded-4 p-3 gap-4 d-flex align-items-center">
+            <div class="container row d-flex">
+                <div class="d-flex justify-content-around flex-wrap  gap-4 gap-lg-0  col-12 col-lg-4">
+                    <div class="col-12 col-sm-8 col-md-6 col-lg-12 border border-secondary mb-3 rounded-4 p-3 gap-4 d-flex align-items-center">
                         <div >
                             <img class="p-3 bg-secondary rounded-5" src="../images/home/phone.svg" alt="">
                         </div>
@@ -98,7 +102,7 @@
                             <p>+1 212-344-1230</p>
                         </div>
                     </div>
-                    <div class=" border border-secondary mb-3 rounded-4 p-3 gap-4 d-flex align-items-center">
+                    <div class="col-12  col-sm-8 col-md-6 col-lg-12 border border-secondary mb-3 rounded-4 p-3 gap-4 d-flex align-items-center">
                         <div >
                             <img class="p-3 bg-secondary rounded-5" src="../images/home/mail.svg" alt="">
                         </div>
@@ -107,7 +111,7 @@
                             <p>eaturkish@gmail.com</p>
                         </div>
                     </div>
-                    <div class=" border border-secondary mb-2 rounded-4 p-3 gap-4 d-flex align-items-center">
+                    <div class="col-12  col-sm-8 col-md-6 col-lg-12  border border-secondary mb-2 rounded-4 p-3 gap-4 d-flex align-items-center">
                         <div >
                             <img class="p-3 bg-secondary rounded-5" src="../images/home/face.svg" alt="">
                         </div>
@@ -116,7 +120,7 @@
                             <p>eaturkish</p>
                         </div>
                     </div>
-                    <div class=" border border-secondary mb-2 rounded-4 p-3 gap-4 d-flex align-items-center">
+                    <div class="col-12  col-sm-8 col-md-6 col-lg-12 border border-secondary mb-2 rounded-4 p-3 gap-4 d-flex align-items-center">
                         <div >
                             <img class="p-3 bg-secondary rounded-5" src="../images/home/insta.svg" alt="">
                         </div>
@@ -125,7 +129,7 @@
                             <p>eaturkish</p>
                         </div>
                     </div>
-                    <div class=" border border-secondary mb-2 rounded-4 p-3 gap-4 d-flex align-items-center">
+                    <div class="col-12  col-sm-8 col-md-6 col-lg-12 border border-secondary mb-2 rounded-4 p-3 gap-4 d-flex align-items-center">
                         <div >
                             <img class="p-3 bg-secondary rounded-5" src="../images/home/twit.svg" alt="">
                         </div>
@@ -134,17 +138,19 @@
                             <p>eaturkish</p>
                         </div>
                     </div>
-                    
                 </div>
-                <div class="col-12 col-md-8 border border-secondary rounded-4 p-5">
+                <div class="main__eight col-12 col-lg-8 border border-secondary rounded-4 p-5">
                     <h1>Send Message</h1>
-                    <p class="w-75 mb-5 mt-2">If you have any questions, you can send us an SMS or contact us by phone you can also contact us via social networks.</p>
+                    <p class="w-75 mb-3 mt-2">If you have any questions, you can send us an SMS or contact us by phone you can also contact us via social networks.</p>
                     <form class="row needs-validation" novalidate>
                         <div class="col-md-6">
                           <label for="validationCustom01" class="form-label"></label>
                           <input type="text" class="form-control" id="validationCustom01" placeholder="Your name" required>
                           <div class="valid-feedback">
                             Looks good!
+                          </div>
+                          <div class="invalid-feedback">
+                            Please provide a valid Subject.
                           </div>
                         </div>
                         <div class="col-md-6">
@@ -153,6 +159,9 @@
                           <div class="valid-feedback">
                             Looks good!
                           </div>
+                          <div class="invalid-feedback">
+                            Please provide a valid Subject.
+                          </div>
                         </div>
                         <div class="col-md-6">
                             <label for="validationCustom03" class="form-label"></label>
@@ -160,6 +169,9 @@
                             <div class="invalid-feedback">
                               Please provide a valid number.
                             </div>
+                            <div class="valid-feedback">
+                                Looks good!
+                              </div>
                         </div>
                         <div class="col-md-6">
                           <label for="validationCustom03" class="form-label"></label>
@@ -167,15 +179,16 @@
                           <div class="invalid-feedback">
                             Please provide a valid Subject.
                           </div>
+                          <div class="valid-feedback">
+                            Looks good!
+                          </div>
                         </div>
                         <div class="col-md-3">
-                          
                         </div>
                         <div class="col-md-3">
-                          
                         </div>
-                        <div class="form-floating col-12">
-                            <textarea cols="50" class="form-control" placeholder="Message" id="floatingTextarea"></textarea>
+                        <div class="form-floating col-12 mt-2 mb-3">
+                            <textarea class="form-control p-3" id="floatingTextarea"  placeholder="Message">Message: </textarea>
                             <label for="floatingTextarea"></label>
                           </div>
                         <div class="col-12">
@@ -184,7 +197,12 @@
                       </form>
                 </div>
             </div>
-            
+        </div>
+       </section>
+       <section id="map">
+        <div class="container-map">
+            <h1 class="text-center mb-4">Find Us By Card</h1>
+            <iframe class="border border-secondary rounded-5 w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2998.072884043722!2d69.20123767467427!3d41.28551820230991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sru!2s!4v1701634667988!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
        </section>
     </main>

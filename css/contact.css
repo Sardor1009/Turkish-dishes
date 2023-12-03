@@ -264,7 +264,8 @@ p {
 }
 #main h4,
 #main h3,
-#main p {
+#main p,
+#main h1 {
   color: #242424;
   font-family: "Varela Round", sans-serif;
   font-size: 64px;
@@ -277,7 +278,8 @@ p {
 @media (max-width: 700px) {
   #main h4,
   #main h3,
-  #main p {
+  #main p,
+  #main h1 {
     font-size: 40px;
   }
 }
@@ -285,8 +287,9 @@ p {
   font-family: Open Sans;
   font-size: 22px;
   line-height: 34px;
+  margin: 0;
 }
-#main p {
+#main ::-webkit-input-placeholder {
   font-family: Open Sans;
   font-size: 14px;
   font-weight: 400;
@@ -295,11 +298,114 @@ p {
   opacity: 0.7;
   text-align: start;
 }
+#main ::-moz-placeholder {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0;
+  opacity: 0.7;
+  text-align: start;
+}
+#main :-ms-input-placeholder {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0;
+  opacity: 0.7;
+  text-align: start;
+}
+#main ::-ms-input-placeholder {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0;
+  opacity: 0.7;
+  text-align: start;
+}
+#main p,
+#main ::placeholder,
+#main #floatingTextarea {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0;
+  letter-spacing: 0;
+  opacity: 0.7;
+  text-align: start;
+}
+#main h1 {
+  font-family: Open Sans;
+  font-size: 38px;
+  line-height: 34px;
+  font-weight: 600;
+  text-align: start;
+}
+@media (max-width: 700px) {
+  #main h1 {
+    font-size: 25px;
+  }
+}
+
+.container {
+  max-width: 1300px;
+}
 
 .main__img {
   margin-bottom: 60px;
 }
-.main textarea {
+.main #floatingTextarea {
   resize: none;
-  height: 300px;
+  height: 150px;
+}
+
+.hero__ahref {
+  line-height: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #B0B0B0;
+}
+
+.hero__ahref2 {
+  padding-left: 10px;
+}
+
+#map {
+  margin-top: 110px;
+}
+@media (max-width: 800px) {
+  #map {
+    margin-bottom: -90px;
+  }
+}
+#map h1 {
+  font-family: "Varela Round", sans-serif;
+  color: #242424;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: 1.14px;
+}
+@media (max-width: 700px) {
+  #map h1 {
+    font-size: 25px;
+  }
+}
+
+.container-map {
+  max-width: calc(100vw - 60px);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+@media (max-width: 700px) {
+  .container-map {
+    max-width: calc(100vw - 60px + 40px);
+  }
+}
+
+iframe {
+  height: calc((100vw - 60px) * 2 / 3);
 }

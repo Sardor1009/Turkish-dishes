@@ -10,7 +10,8 @@
   margin-top: 130px;
   h4,
   h3,
-  p {
+  p,
+  h1 {
     color: v.$black-color;
     font-family: "Varela Round", sans-serif;
     font-size: 64px;
@@ -27,8 +28,11 @@
     font-family: Open Sans;
     font-size: 22px;
     line-height: 34px;
+    margin: 0;
   }
-  p {
+  p,
+  ::placeholder,
+  #floatingTextarea {
     font-family: Open Sans;
     font-size: 14px;
     font-weight: 400;
@@ -37,14 +41,69 @@
     opacity: 0.7;
     text-align: start;
   }
+  h1 {
+    font-family: Open Sans;
+    font-size: 38px;
+    line-height: 34px;
+    font-weight: 600;
+    text-align: start;
+     @media (max-width: 700px) {
+      font-size: 25px;
+    }
+  }
 }
+.container {
+  max-width: 1300px;
+}
+
 .main {
   &__img {
     margin-bottom: 60px;
   }
-  textarea {
+  #floatingTextarea {
     resize: none;
-    height: 300px;
-
+    height: 150px;
   }
+}
+
+.hero__ahref {
+  line-height: 10px;
+  padding-right: 10px;
+  border-right: 1px solid v.$border-right;
+}
+.hero__ahref2 {
+  padding-left: 10px;
+}
+
+// -----map --
+#map {
+  margin-top: 110px;
+  @media (max-width: 800px) {
+    margin-bottom: -90px;
+  }
+  h1 {
+    font-family: "Varela Round", sans-serif;
+    color: v.$black-color;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 130%;
+    letter-spacing: 1.14px;
+    @media (max-width: 700px) {
+      font-size: 25px;
+    }
+  }
+}
+$width: calc(100vw - 60px);
+.container-map {
+  max-width: $width;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+  @media (max-width: 700px) {
+    max-width: calc($width + 40px);
+  }
+}
+iframe {
+  height: calc($width * 2 / 3);
 }
