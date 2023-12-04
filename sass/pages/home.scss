@@ -62,8 +62,8 @@
   }
 }
 #loading {
-	position: fixed;
-  background-color:#F1F2F3;
+  position: fixed;
+  background-color: #f1f2f3;
   top: 0;
   bottom: 0;
   left: 0;
@@ -71,8 +71,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-	z-index: 1000098987878;
-	transition: 0.5s;
+  z-index: 1000098987878;
+  transition: 0.5s;
 }
 
 #backtop {
@@ -100,8 +100,8 @@
   top: calc(100vh - 80px);
   right: 40px;
   z-index: 9;
-  @media (max-width: 700px){
-    top: calc(100vh - 150px)
+  @media (max-width: 700px) {
+    top: calc(100vh - 150px);
   }
 }
 
@@ -110,15 +110,33 @@
   z-index: -1;
 }
 @keyframes ldio-dgtxaib6wzq-o {
-    0%    { opacity: 1; transform: translate(0 0) }
-   49.99% { opacity: 1; transform: translate(80px,0) }
-   50%    { opacity: 0; transform: translate(80px,0) }
-  100%    { opacity: 0; transform: translate(0,0) }
+  0% {
+    opacity: 1;
+    transform: translate(0 0);
+  }
+  49.99% {
+    opacity: 1;
+    transform: translate(80px, 0);
+  }
+  50% {
+    opacity: 0;
+    transform: translate(80px, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
 }
 @keyframes ldio-dgtxaib6wzq {
-    0% { transform: translate(0,0) }
-   50% { transform: translate(80px,0) }
-  100% { transform: translate(0,0) }
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(80px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
 }
 .ldio-dgtxaib6wzq div {
   position: absolute;
@@ -158,8 +176,9 @@
   backface-visibility: hidden;
   transform-origin: 0 0; /* see note above */
 }
-.ldio-dgtxaib6wzq div { box-sizing: content-box; }
-
+.ldio-dgtxaib6wzq div {
+  box-sizing: content-box;
+}
 
 #home {
   background-color: v.$home-bg;
@@ -232,6 +251,25 @@
     right: 40px;
   }
 }
+
+
+
+// #owl__smooth{
+//   animation: scroll 20s linear infinite;
+// }
+// @keyframes scroll {
+//   0% {
+//     transform: translateX(0);
+//   }
+//   100% {
+//     transform: translateX(-100%);
+//   }
+// }
+
+// I TRIED TO MAKE AN OWL-CAROUSEL THAT 
+// FOLLOWS IWITH SMOOTH MOVES
+//  BUT I COULDNOT DO IT SORRY BUT I WILL DO IT 
+//  IN RECENT MONTHS/WEEKS
 
 // =--------pack tabb======
 

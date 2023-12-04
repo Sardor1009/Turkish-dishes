@@ -5,7 +5,9 @@ $(document).ready(function(){
             margin: 20,
             dots: false,
             nav: true,
+            loop: true,
             autoplay: true,
+            autoplayTimeout: 2500,
             items: 4,
             navText: ["<img src='images/home/right.svg'/>", "<img src='images/home/left.svg'/>"],
             responsive: {
